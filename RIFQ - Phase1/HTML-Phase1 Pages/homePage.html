@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RIFQ Homepage</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+    <style>
+        .jumbotron {
+            padding: 20px;
+            margin: 0px;
+            background-color: #aed0dd;
+        }
+        .navbar
+        {
+            margin: 0px;
+        }
+    </style>
+
+</head>
+<body class="container">
+<nav class="navbar navbar-inverse   ">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">RIFQ Web APP</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="homePage.html">HomePage</a></li>
+            <li><a href="Tasks.html">Tasks</a></li>
+            <li><a href="Comments.html">Comments</a></li>
+            <li><a href="Calendar.html">Calendar</a></li>
+            <li><a href="Summery.html">Summary</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/login"><span class="glyphicon glyphicon-user"></span> Welcome, Ahmed</a></li>
+            <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+        </ul>
+    </div>
+</nav>
+<h2 class="page-header text-warning">RIFQ App Links</h2>
+
+<table class="table table-striped table-bordered table-hover table-condensed">
+    <tr>
+        <th align="">My Tasks And Comments</th>
+        <th>Link</th>
+    </tr>
+    <tr>
+        <td>Tasks Link: </td>
+        <td><a href="/Tasks"> http://localhost/Tasks</a></td>
+    </tr>
+    <tr>
+        <td>Comments Link: </td>
+        <td><a href="/courses"> http://localhost/Comments</a></td>
+    </tr>
+
+
+    <tr>
+        <th>Calendar and Courses Workload</th>
+        <th>Link</th>
+    <tr>
+        <td>Calendar Link: </td>
+        <td><a href="/Calendar"> http://localhost/Calendar</a></td>
+    </tr>
+    <tr>
+        <td>Generate Workload Link: </td>
+        <td><a href="/Summery"> http://localhost/Summery</a></td>
+    </tr>
+    </tr>
+
+</table>
+</body>
+</html>
