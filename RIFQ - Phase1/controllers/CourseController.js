@@ -5,35 +5,35 @@ let courseRepository = require('../models/CourseRepository');
 class courseController{
     constructor (){};
 
-    async getCourse(req,res){
+    async getAllTasks(req,res){
         try {
             //Phase 2
         }catch (err){
             req.status(500).send(err);
         }
     }
-    async getCourses(req,res){
+    async getCourseTasks(req,res){
         try{
             //Phase 2
         }catch (err){
             req.status(500).send(err);
         }
     }
-    async addComment(req,res){
+    async deleteTask(req,res){
         try{
             //Phase 2
         }catch (err){
             req.status(500).send(err);
         }
     }
-    async updateComment(req,res){
+    async addTask(req,res){
         try{
             //Phase 2
         }catch (err){
             req.status(500).send(err);
         }
     }
-    async deleteComment(req,res){
+    async updateTask(req,res){
         try{
             //Phase 2
         }catch (err){
