@@ -46,7 +46,7 @@
 
 <!--------->
 <div id="comments-list">
-    <br>
+    <button class="btn btn-success" onclick="" style="margin: 10px;" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-plus"></i> Add Comment</button>
     <div class="row">
 
         <table id="commentsTable" class="table table-striped table-bordered dataTable" style="width: 1125px; margin: 0px auto">
@@ -144,35 +144,29 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 id="modalTitle">Edit Task</h4>
+                    <h4 id="modalTitle">Add or Edit Comment</h4>
                 </div>
                 <div class="modal-body" id="modal-body">
                     <form>
                         <div class="form-group">
-                        <label class="control-label">Task ID:</label>
-                        <input type="text" class="form-control" id="id" name="taskId" value="">
+                        <label class="control-label">Comment ID:</label>
+                        <input type="text" class="form-control" id="id" name="id" value="5" disabled>
                         </div>
                         <div class="form-group">
-                            <label class="control-label">Task Type:</label>
-                            <input type="text" class="form-control" id="taskType" name="taskType" value="" required>
-                        </div>
-                        <div class="form-group" >
                             <label class="control-label">Title:</label>
                             <input type="text" class="form-control" id="title" name="title" value="" required>
                         </div>
                         <div class="form-group" >
-                            <label class="control-label">Due Date:</label>
+                            <label class="control-label">Body:</label>
+                            <input type="text" class="form-control" id="body" name="body" value="" required>
+                        </div>
+                        <div class="form-group" >
+                            <label class="control-label">Written By:</label>
+                            <input type="text" class="form-control" id="createdBy" name="createdBy" value="" required>
+                        </div>
+                        <div class="form-group" >
+                            <label class="control-label">Date:</label>
                             <input type="date" class="form-control" id="date" name="date" value="" required>
-                        </div>
-                        <div class="form-group" >
-                            <label class="control-label">Effort Hours:</label>
-                            <input type="number" class="form-control" id="efh" name="efh" value="" required>
-                        </div>
-                        <div class="form-group" >
-                            <label class="control-label">Weight:</label>
-                            <input type="range" class="form-control" id="weight" name="weight" min="0" max="100"
-                                   oninput="selected.value=weight.value" value="120" required>
-                            <label name="selected">Selected Value:<output name="selected">1</output></label>% (Percentage)
                         </div>
                         <input type="submit" class="btn btn-primary" id="submit">
                         <button type="button" class="btn btn-warning" data-dismiss="modal" >Close</button>
